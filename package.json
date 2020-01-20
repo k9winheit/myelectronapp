@@ -1,0 +1,31 @@
+{
+  "name": "electron-auto-update-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "build": {
+    "appId": "com.example.NewElectronAutoUpdate",
+    "win": {
+      "target": "nsis"
+    },
+    "publish": {
+      "provider": "github",
+      "token": "cb927b1e8476d913df472e044005d648d624a75c"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.4",
+    "electron-builder": "^22.2.0"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.0"
+  }
+}
