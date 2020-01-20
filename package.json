@@ -1,8 +1,12 @@
 {
   "name": "electron-auto-update-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/k9winheit/myelectronapp.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
@@ -16,7 +20,7 @@
     },
     "publish": {
       "provider": "github",
-      "token": "cb927b1e8476d913df472e044005d648d624a75c"
+      "token": "8c343e5ad203d15d3ae2741543ba5e39d977f496"
     }
   },
   "author": "",
